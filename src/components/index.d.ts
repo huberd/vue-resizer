@@ -1,1 +1,1 @@
-declare module 'vue-resizer';
+declare module '@dhoumb/vue-resizer';
