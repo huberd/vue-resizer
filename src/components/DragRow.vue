@@ -1,10 +1,10 @@
 <template>
   <div
-    class="drager_row"
+    class="dragger_row"
     ref="container"
     :style="{ width: width, height: height }"
   >
-    <div class="drager_top" :style="{ height: top + '%' }">
+    <div class="dragger_top" :style="{ height: top + '%' }">
       <div>
         <slot name="top"></slot>
       </div>
@@ -19,7 +19,7 @@
         marginBottom: -sliderWidth / 2 + 'px',
       }"
     ></div>
-    <div class="drager_bottom" :style="{ height: 100 - top + '%' }">
+    <div class="dragger_bottom" :style="{ height: 100 - top + '%' }">
       <div>
         <slot name="bottom"></slot>
       </div>
@@ -157,40 +157,40 @@ export default {
 };
 </script>
 <style>
-.drager_row {
+.dragger_row {
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
-.drager_row * {
+.dragger_row * {
   box-sizing: border-box;
 }
-.drager_row > div {
+.dragger_row > div {
   width: 100%;
 }
-.drager_top {
+.dragger_top {
   padding-bottom: 10px;
 }
-.drager_top > div {
+.dragger_top > div {
   height: 100%;
   overflow: hidden;
 }
-.drager_bottom {
+.dragger_bottom {
   padding-top: 10px;
 }
-.drager_bottom > div {
+.dragger_bottom > div {
   height: 100%;
   overflow: hidden;
 }
-.drager_row > .slider_row {
+.dragger_row > .slider_row {
   transition: background 0.2s;
   position: relative;
   z-index: 1;
   cursor: row-resize;
   background: v-bind("sliderBgColor");
 }
-.drager_row > .slider_row:before {
+.dragger_row > .slider_row:before {
   transition: background-color 0.2s;
   position: absolute;
   left: 50%;
@@ -204,7 +204,7 @@ export default {
   max-width: 70px;
   background-color: v-bind("sliderColor");
 }
-.drager_row > .slider_row:after {
+.dragger_row > .slider_row:after {
   transition: background-color 0.2s;
   position: absolute;
   left: 50%;
@@ -218,14 +218,14 @@ export default {
   max-width: 70px;
   background-color: v-bind("sliderColor");
 }
-.drager_row > .slider_row:hover:before,
-.drager_row > .slider_row:hover:after,
-.drager_row > .slider_row:active:before,
-.drager_row > .slider_row:active:after {
+.dragger_row > .slider_row:hover:before,
+.dragger_row > .slider_row:hover:after,
+.dragger_row > .slider_row:active:before,
+.dragger_row > .slider_row:active:after {
   background-color: v-bind("sliderHoverColor");
 }
-.drager_row > .slider_row:hover,
-.drager_row > .slider_row:active {
+.dragger_row > .slider_row:hover,
+.dragger_row > .slider_row:active {
   background: v-bind("sliderBgHoverColor");
 }
 </style>

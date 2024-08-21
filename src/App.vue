@@ -741,8 +741,8 @@ p {
   margin: 0 auto;
   padding-bottom: 100px;
 }
-.drager_col,
-.drager_row,
+.dragger_col,
+.dragger_row,
 .resize_col,
 .resize_row,
 .resize {
@@ -752,15 +752,15 @@ p {
   border-radius: 0;
 }
 /* example_1 */
-.example_1 .drager_left {
+.example_1 .dragger_left {
   overflow: hidden;
   position: relative;
 }
-.example_1 .drager_right {
+.example_1 .dragger_right {
   overflow: hidden;
   position: relative;
 }
-.example_1 .drager_left > div {
+.example_1 .dragger_left > div {
   height: auto;
   font-size: 24px;
   font-weight: bold;
@@ -770,7 +770,7 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.example_1 .drager_right > div {
+.example_1 .dragger_right > div {
   height: auto;
   font-size: 24px;
   font-weight: bold;
@@ -780,28 +780,28 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.drager_left {
+.dragger_left {
   background: #2d4252;
 }
-.drager_right {
+.dragger_right {
   background: #4d6170;
 }
 /* example_2 */
-.drager_top {
+.dragger_top {
   background: #2d4252;
 }
-.drager_bottom {
+.dragger_bottom {
   background: #4d6170;
 }
-.example_2 .drager_top {
+.example_2 .dragger_top {
   overflow: hidden;
   position: relative;
 }
-.example_2 .drager_bottom {
+.example_2 .dragger_bottom {
   overflow: hidden;
   position: relative;
 }
-.example_2 .drager_top > div {
+.example_2 .dragger_top > div {
   height: auto;
   font-size: 24px;
   font-weight: bold;
@@ -811,7 +811,7 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.example_2 .drager_bottom > div {
+.example_2 .dragger_bottom > div {
   height: auto;
   font-size: 24px;
   font-weight: bold;

@@ -1,6 +1,6 @@
 {
   "name": "pd-vue-resizer",
-  "private": false,
+  "private": true,
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
